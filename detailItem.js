@@ -1,48 +1,6 @@
 import { useState } from "react";
 import { Image, Text, TouchableOpacity, View } from "react-native";
 
-const data = [
-  {
-    id: 1,
-    name: "Peter Luger",
-    price: "$48.00",
-    rate: "9.2",
-    like: true,
-    img: "./assets/Data_Examination_4_6/a.png",
-    calo: "344kcal",
-    des: "nhiều chất béo",
-  },
-  {
-    id: 2,
-    name: "Peter Luger",
-    price: "$44.00",
-    rate: "4.2",
-    like: true,
-    img: "./assets/Data_Examination_4_6/a.png",
-    calo: "344kcal",
-    des: "nhiều chất béo",
-  },
-  {
-    id: 3,
-    name: "Angus bugger",
-    price: "$12.00",
-    rate: "2.2",
-    like: false,
-    img: "./assets/Data_Examination_4_6/b.png",
-    calo: "344kcal",
-    des: "nhiều chất béo",
-  },
-  {
-    id: 4,
-    name: "Angus bugger",
-    price: "$56.00",
-    rate: "3.2",
-    like: false,
-    img: "./assets/Data_Examination_4_6/b.png",
-    calo: "344kcal",
-    des: "nhiều chất béo",
-  },
-];
 function detailItem({ item }) {
   const [quantity, setQuantity] = useState(1);
 

@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import Item from "./Item";
 
-function main() {
+function main({ navigation }) {
   const data = [
     {
       id: 1,
@@ -77,6 +77,7 @@ function main() {
           data={data}
           renderItem={Item}
           keyExtractor={(item) => item.id}
+          navigation={navigation}
         ></FlatList>
       </View>
     </View>
